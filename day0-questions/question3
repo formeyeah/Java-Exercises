@@ -1,0 +1,7 @@
+baraye vahed pool Iran (Rial) che type ei monaseb tar hast? 
+BigDecimal -> vahed besyar bozorgi ke qader be zakhire ashare ziadi mibashad
+BigInteger -> baray zakhire vahed haye kheili bozorge bedon ashar
+ta jayi ke motvjh shodm 2 no variable darim primitive va refrence va primitive ha 8 ta hastan ke 6 tash marbot be adad hast: 
+integers: byte, short, int, long
+floating point: float, double 
+ke ina hichkododm baraye zakhire adad haye besyar bozorg monaseb nistn msln long ye qesmti az deciaml ra negah midarad va hameye ashar ra dar nazar nmigird
