@@ -1,0 +1,9 @@
+a few popular IDEs for Java: 
+Eclipse
+IntelliJ IDEA 
+NetBeans -> it has support for databases and server side Java applications + it is supported by Oracle
+BlueJ -> for Java web development 
+Apache JDeveloper-> supplied by Oracle
+VS Code -> not a traditional Java IDE but it's common to use it 
+DrJava -> specifically designed for beginners and students
+JetBrains Rider -> for developers working on .NET projects alongside Java
