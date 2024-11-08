@@ -1,0 +1,6 @@
+ Patterns are typical solutions to common problems in object-oriented design.
+   three main groups of patterns:
+   Creational patterns: creates object creation mechanisms -> flexibility, reuse of existing code
+   Structural patterns: how to assemble objects and classes into larger structures while keeping the structures efficient
+   Behavioral patterns: effictive communication and assignment of responsibilities between objects
+     
