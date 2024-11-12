@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MainforProblem0 {
 
@@ -26,7 +27,9 @@ public class MainforProblem0 {
 		Account account3= new Account(30, "reza", "Tehran");
 		Account account4= new Account(40, "Sara", "Tehran");
 		Account account5= new Account(20, "ramina", "Tehran");
-		Account account6= new Account(30, "Ali", "Toronto");
+		Account account6= new Account(30, "ali", "Toronto");
+		Account account7= new Account(60, "alireza", "Tehran");
+		Account account8= new Account(60, "ahmad", "Tehran");
 		
 		//this list was immutable so I needed to create an arrayList
 		List<Account> accounts=List.of(account1,account2,account3,account4,account5,account6);
@@ -62,12 +65,12 @@ public class MainforProblem0 {
 		}
 		
 		//duta list ke har kodom account haye har branch ro dare 
-		for (Account account : accounts) {
-			if (account.getBranch().equals(mutableAccounts)) {
+		//for (Account account : accounts) {
+			//if (account.getBranch().equals(mutableAccounts)) {
 				
-			}
+		//	}
 			
-		}
+		//}
 		
 		
 		
@@ -113,7 +116,38 @@ public class MainforProblem0 {
 		System.out.println(mutableAccounts);
 
 		
+		//account hayi ke ba harf A bozorg name eshon shoro mishe -> list bargardonid
+		
+		List<Account> listAccountNamesStartA= mutableAccounts.stream()
+				.filter(t-> t.getName().toLowerCase().startsWith("r"))
+				.collect(Collectors.toList());
+		System.out.println("accounts starting with A : "+ listAccountNamesStartA);
+		//chera ba A nmishe?
+		
+	
+		
+		//be esm account harchi hast -> uppercase konid name haro name haro uppercase konid -> list bargardonid
+		
+		List<Account> UppercasedAccount=mutableAccounts.stream()
+				.map(account-> {account.setName(account.getName().toUpperCase());
+						
+						return account;
+						
+						
+				})
+				.collect(Collectors.toList());
+		System.out.println("uppercased names: " + UppercasedAccount);
+		
+		//account hayi ke balance > 10 && name.startswithA -> be onvane ye list bargardon
+		List<Account> tenAndA=mutableAccounts.stream()
+				.filter(t-> t.getBalance() > 10 &&  t.getName().toLowerCase().startsWith("r"))
+				.collect(Collectors.toList());
+		
+		
 
+			System.out.println("Accounts with balance > 10 and name starting with 'A': " + tenAndA);
+
+		
 	}
 
 }

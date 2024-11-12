@@ -5,8 +5,12 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class MainforPerson {
 
@@ -67,6 +71,30 @@ public class MainforPerson {
 		});
 		
 		//Collections.sort(persons, new sortbyage());
+		List<String> mylist= Arrays.asList("salam", "khoobi");
+		
+		//behem bego for each mizanam che kari anjam bedam
+		//kari -> function bayad estfde koni 
+		mylist.forEach(t-> System.out.println(t));
+		
+		Map<Integer, String> salam=new HashMap<>();
+		salam.put(1, "salam heheh");
+		salam.put(2, "khodafez");
+		// ye for each e bi consumer midim be in mape 
+		
+		salam.forEach(((t, u) -> System.out.println(t+u)));
+		
+		List<String> names= Arrays.asList("rojina", "ramina");
+	//bazi vaqta baraye estfde az function ha ba list ha bayad az khude stream estfde konim , akhrshm ba collect mibandim
+		//va behesh migim ba chi bargardone be ma !
+		List<String> namesStartwithA= names.stream().filter(t-> t.startsWith("A")).collect(Collectors.toList());
+		System.out.println(namesStartwithA);
+		
+		//??????????
+		List<Person> persosns; 
+		//persosns.replaceAll(t -> t.setAge());
+		
+		
 		
 
 	}
