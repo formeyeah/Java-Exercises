@@ -1,0 +1,10 @@
+Basic concepts of Singleton:
+1-Single Instance: Only one instance of the class is created throughout the program’s lifecycle.
+
+2-Global Access Point: The instance is globally accessible,
+meaning you can access the same instance from anywhere in the program.
+
+3-Private Constructor: The constructctor is private, so no other code can create an instance of the class directly.
+
+4-Static Method for Access: A static method (ofthen called getInstance) provides the single instance of the class. 
+when this method is called for the first time, it creates the instance; on subsequent calls, it returns the existing instance
