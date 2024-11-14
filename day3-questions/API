@@ -3,3 +3,9 @@ API -> Application Programmeable interface
   e.g. -> get access to data from third parties
   e.g. -> abstracting complexity
   
+API helps software applications to communicate with each other to exchange data in forms like XML and JSON etc. 
+APIs are used for payment
+how does it work? 
+
+
+
