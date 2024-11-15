@@ -1,11 +1,11 @@
-package day3.problem3.Service;
+package day4.problem0.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import day3.problem3.Service.Exception.ProductNotFound;
-import day3.problem3.model.Product;
-import day3.problem3.model.ProductType;
+import day4.problem0.Service.Exception.ProductNotFound;
+import day4.problem0.model.Product;
+import day4.problem0.model.ProductType;
 
 public class ServiceManager {
 

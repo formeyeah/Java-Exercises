@@ -1,4 +1,4 @@
-package day3.problem3.model;
+package day4.problem0.model;
 
 public record Product(String name, ProductType productType, int price, boolean onSale) {
 	/*

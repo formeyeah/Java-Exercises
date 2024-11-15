@@ -1,4 +1,4 @@
-package day3.problem3.Service.Exception;
+package day4.problem0.Service.Exception;
 
 public class ProductNotFound extends Exception {
 
