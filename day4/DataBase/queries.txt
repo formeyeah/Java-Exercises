@@ -1,0 +1,18 @@
+-- Query to list all employees in Department 1
+SELECT e.* 
+FROM Employee e
+JOIN Employee_Department ed ON e.id = ed.employee_id
+WHERE ed.department_id = 1;
+
+-- Query to list employees in Department 1 with salary > 100
+SELECT e.* 
+FROM Employee e
+JOIN Employee_Department ed ON e.id = ed.employee_id
+WHERE ed.department_id = 1 AND e.salary > 100;
+
+-- Query to list employees in Department 1 ordered by name
+SELECT e.* 
+FROM Employee e
+JOIN Employee_Department ed ON e.id = ed.employee_id
+WHERE ed.department_id = 1
+ORDER BY e.name;
