@@ -1,0 +1,40 @@
+This scenario describes designing a **backend system** for a UI-based e-commerce platform (like Digikala), where products are categorized and displayed based on user input or all items when no filters are applied. Here's a breakdown of the requirements:
+
+1. **Product Information**:
+   - Each product has a:
+     - **Name** (`nameKala`).
+     - **Category** (`dasteKala`), such as digital, home-related, or clothing.
+     - **Price** (`qeymat`).
+     - **Flag** (`flag`), indicating whether the product is on sale or not.
+
+2. **User Interaction**:
+   - The user can:
+     - Search by product name.
+     - Filter by category.
+     - Leave either field empty or both empty:
+       - If **both are empty**, display all products.
+       - If one field is filled, filter products accordingly.
+
+3. **System Components**:
+   - **Models (Objects)**: Define the structure for categories and products.
+   - **Services**: Provide functionalities to:
+     - Populate the product list and categories.
+     - Retrieve filtered results based on user input.
+   - **Exception Handling**: Handle cases like invalid inputs, no matching results, or empty lists.
+
+4. **Custom Lists**:
+   - You need to create your own implementation of lists, instead of relying on prebuilt ones (like `ArrayList` in Java).
+
+5. **Backend Services**:
+   - Must implement:
+     - A service to populate the list of categories.
+     - A service to fetch the list of products based on filters.
+     - Additional services for handling incomplete input scenarios (e.g., missing category or name).
+
+6. **Data Flow**:
+   - The backend interacts with the user interface to provide:
+     - A list of product categories.
+     - Filtered or complete product lists based on user input.
+
+7. **Flexibility**:
+   - The system must handle different combinations of user input dynamically, ensuring valid outputs for every case.
