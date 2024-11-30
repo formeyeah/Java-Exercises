@@ -1,0 +1,36 @@
+{
+    "libName": "City Library",
+    "location": "Downtown",
+    "magazines": [
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "publishedYear": 1925,
+			"numInStock": 31,
+            "reviews": [
+                {
+                    "reviewerName": "John Doe",
+                    "rating": 5,
+                    "comment": "A classic masterpiece!"
+                },
+                {
+                    "reviewerName": "Jane Smith",
+                    "rating": 4,
+                    "comment": "Very enjoyable read."
+                }
+            ]
+        },
+        {
+            "title": "1984",
+            "author": "George Orwell",
+            "publishedYear": 1949,
+            "reviews": [
+                {
+                    "reviewerName": "Alice Johnson",
+                    "rating": 5,
+                    "comment": "A chilling portrayal of a dystopian future."
+                }
+            ]
+        }
+    ]
+}

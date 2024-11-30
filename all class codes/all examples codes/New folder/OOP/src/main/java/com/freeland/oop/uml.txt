@@ -1,0 +1,55 @@
+@startuml
+
+class Staff{
+ -String firstName
+ -String lastName
+ -String Address
+ -int experience
+ -int age
+ -int childres
+ -boolean married
+ +fullName() :String
+ +retriedDate() : Date
+ +isMarriedAndHasChlid() : boolean
+}
+
+class Person{
+ -String name
+ -Car car
+ -Address address
+ -int age
+ +getName() : String
+ +getAge() : int
+}
+
+class Car{
+ -String type;
+ -String model;
+ -String color;
+ -int speed;
+ +increaseSpeed() : int
+ +decreaseSpeed() : int
+}
+
+class Address{
+ -String country;
+ -String city;
+ -String location;
+ +getCountry(): String
+ +getCity(): String
+}
+Person o- Address : has 1 >
+Person -- Car:  < owns
+
+
+class Building {
+ +String address
+ +Room[] rooms
+}
+
+class Room{
+ +String color
+}
+
+Building *- Room : has 10
+@enduml

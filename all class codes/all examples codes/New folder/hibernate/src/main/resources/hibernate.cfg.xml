@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        <property name="hibernate.connection.driver_class">org.h2.Driver</property>                  <!--Same as before-->
+        <property name="hibernate.connection.url">jdbc:h2:tcp://localhost:9092/~/atestdb</property>  <!--Same as before-->
+        <property name="hibernate.connection.username">sa</property>                                 <!--Same as before--> 
+        <property name="hibernate.connection.password"></property>                                   <!--Same as before-->
+                
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property> <!-- In Persian : GOYESH !! -->
+        
+        <property name="hibernate.hbm2ddl.auto">create-drop</property> <!--Drop and re-create the database schema on startup -->
+        <property name="show_sql">true</property>
+        
+        
+        <mapping class="ir.freeland.hibernate.model.User"/> <!--"Entity"" OR ":"Models"" OR "Persistence  Objects"" Or "POJO"" -->
+        
+    </session-factory>
+</hibernate-configuration>
